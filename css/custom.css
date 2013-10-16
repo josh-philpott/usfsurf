@@ -1,0 +1,88 @@
+/* custom.css */
+
+.body-wrapper{
+	/*margin-top: 5px;*/
+}
+
+.border-bottom{
+	border-bottom: 1px solid #000000;
+	margin-bottom:20px;
+}
+
+.event-image{
+	display:inline-block;
+	margin: 10px 10px;
+	border:2px solid black;
+}
+
+.event-info{
+	text-align: center;
+	min-width:250px;
+}
+
+
+
+
+
+.tile{
+	margin:20px 20px ;
+	height:154px; 
+	width:204px;
+	z-index: 1;
+	background-color: black;
+	display:inline-block;
+	vertical-align: top;
+	position:relative;
+	border:2px solid black;
+	cursor: pointer;
+	color:#FFFFFF;
+
+}
+
+.tile h1{
+	margin-top:5px;
+	font-family:"Arvo";
+	font-size:18px;
+}
+
+.tile p{
+	margin:10px 5px 10px 5px;
+	font-family: "PT Sans";
+	font-size: 15px;
+}
+
+
+.tile-cover{
+	z-index:10;
+	height:150px;
+	width:200px;
+	opacity:1;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+@media (min-width:528px){
+	.vertical-rule-left{
+	    border-left: 1px solid #000000;
+	}
+	.vertical-rule-right{
+	    border-right: 1px solid #000000;	
+	}
+}
+
+.navbar li:hover{
+	background-color:gray;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+.debug{
+	margin-top:50px;
+}
+

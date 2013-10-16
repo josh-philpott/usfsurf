@@ -1,0 +1,23 @@
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+ <script src="{{STATIC_URL}}js/bootstrap.js"></script>   
+ <script src="{{STATIC_URL}}js/script.js"></script>
+ <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+ <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+ <script src="{{STATIC_URL}}js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 640,
+        height: 360,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });
+  </script>

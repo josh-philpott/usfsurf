@@ -1,0 +1,49 @@
+<div class="row section debug">
+	<div class="col-12 ">
+		<h1> Events </h1>
+		<p> Below you can find information on USF Surfs upcoming and previous events. </p>
+		</hr>
+	</div>
+	
+
+	<div class="col-6 event-info vertical-rule-right">
+		<h2> Upcoming Events </h2>
+		{% if upcoming_events_list %}
+			{% for event in upcoming_events_list %}
+				<div class="tile" id="event_{{event.id}}"> 
+					<h1> {{event.name}}</h1>
+					<p> {{event.teaser_desc}} </p>
+					<div class="tile-cover"><img src="{{event.teaser_img}}"></div>
+				</div>
+			{% endfor %}	
+
+		{% else %}
+			<p> There are no upcoming events posted. Check back later!</p>
+		{% endif %}
+			<h2> Past Events </h2>
+		{% if previous_events_list %}
+			{% for event in previous_events_list %}
+				<div class="tile" id="event_{{event.id}}"> 
+					<h1> {{event.name}}</h1>
+					<p> {{event.teaser_desc}} </p>
+					<div class="tile-cover"><img src="{{event.teaser_img}}"></div>
+				</div>
+			{% endfor %}	
+		{% else %}
+			<p> There are no previous events posted. </p>
+		{% endif %}
+	</div>
+
+
+	<!--Right Column-->
+	<div class="col-6 event-info right-column">
+	  <h2> </h2>
+	  <p> Click an event on the left to view details...</p>
+<!--
+	  <div class="event-image" ><img id='event-img2' src="http://placehold.it/250x300&text=SO+PITTED"></div>
+	  <div class="event-image" ><img id='event-img3' src="http://placehold.it/250x300&text=SMACK+DA+LIP"></div>
+-->
+	</div>
+</div>
+
+
